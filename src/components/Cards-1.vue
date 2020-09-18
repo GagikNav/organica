@@ -21,25 +21,25 @@
             title: 'Natural Food',
             paragraph:
               'Lorem ipsum "ONE" dolor sit amet consectetur adipisi',
-            img: '../assets/card1.png'
+            img: `card1.png`
           },
           {
             title: 'Healthy Food',
             paragraph:
               'Lorem ipsum "TOW" dolor sit amet consectetur adipisi',
-            img: " require('../assets/card4')"
+            img: `card2.png`
           },
           {
             title: 'Biologically Safe',
             paragraph:
               'Lorem ipsum "THREE" dolor sit amet consectetur adipisi',
-            img: "require('../assets/card4')"
+            img: `card3.png`
           },
           {
             title: 'Biologically Safe',
             paragraph:
               'Lorem ipsum "FOUR" dolor sit amet consectetur adipisi',
-            img: "require('../assets/card4')"
+            img: `card4.png`
           }
         ]
       }

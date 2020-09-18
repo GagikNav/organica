@@ -1,0 +1,37 @@
+.btn-green {
+  box-shadow: 0px 7px 14px -7px #3e7327;
+  margin: 10px 20px;
+  background: linear-gradient(
+    to bottom,
+    #a8db8f 5%,
+    #72b352 100%
+  );
+  outline: none !important;
+  background-color: #a8db8f;
+  border-radius: 7px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 2px #5b8a3c;
+}
+.btn-green:hover {
+  background: linear-gradient(
+    to bottom,
+    #72b352 5%,
+    #a8db8f 100%
+  );
+  background-color: #72b352;
+}
+.btn-green:active {
+  position: relative;
+  top: 10px;
+}
+.btn-green:focus,
+.btn-green:active {
+  outline: none !important;
+}

@@ -51,11 +51,9 @@
   @import '../Scss/config';
   .banner {
     display: flex;
-    // @include border;
-
     background: #f5fcf9;
-    // background: #888;
-    height: 80vh;
+    height: 70vh;
+    min-height: 600px;
     width: 100%;
     .main-image {
       width: 50%;
@@ -67,10 +65,11 @@
     }
     .presentaion {
       width: 50%;
+      // @include border;
       @import '../Scss/texet1';
       text-align: start;
       .main-text-container {
-        padding-top: 5%;
+        padding: 5%;
         h2,
         h1,
         p {
@@ -92,32 +91,48 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        height: 20rem;
         .service {
           // @include border;
+          margin: 5px 0;
           display: grid;
-
           grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr, 4fr;
           grid-template-areas: 'img h4' 'img p';
           img {
             grid-area: img;
             // @include border;
-            height: 80%;
-            margin: 10px;
+            height: 70px;
+            width: 91px;
+            margin: 5px;
           }
 
           h4 {
-            height: 50%;
-            padding: auto;
-            margin: auto 0;
             grid-area: h4;
-            // background: #eee;
+            display: block;
+            padding-block-start: 1.5rem;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            // @include border;
           }
           p {
+            // @include border;
             grid-area: p;
-            height: 50%;
-            width: auto;
-            margin: 0 1rem 1rem 0;
+            height: auto;
+            width: 100%;
+            font-size: 0.9rem;
             // background: #eee;
+            align-self: center;
+            display: block;
+            padding-block-end: 1rem;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
           }
         }
       }
