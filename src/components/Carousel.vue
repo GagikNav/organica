@@ -50,4 +50,11 @@
   .vueperslides__arrows {
     color: $primary-color;
   }
+
+  // Responsive section
+  @include mediaMd {
+    .vueperslides__arrows {
+      font-size: 0.5rem;
+    }
+  }
 </style>

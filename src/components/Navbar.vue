@@ -10,25 +10,57 @@
         /></div
     ></a>
     <div class="links">
-      <div id="nav">
+      <div id="nav" v-if="!mobileView">
         <router-link to="/">Home</router-link>
         <router-link to="/about">About</router-link>
         <router-link to="/contacts">Contacts</router-link>
       </div>
     </div>
+    <Hamburger
+      v-if="mobileView"
+      v-on:btnClicked="showMobileMenu()"
+    />
   </div>
 </template>
 
 <script>
-  export default {}
+  import Hamburger from './Hamburger';
+  export default {
+    data() {
+      return {
+        mobileView: false,
+        isShowMenu: false,
+        closeMenu: false
+      };
+    },
+    components: {
+      Hamburger
+    },
+    computed: {},
+    methods: {
+      showMobileMenu() {
+        this.isShowMenu = !this.isShowMenu;
+        this.$emit('btnClicked');
+      },
+      handleView() {
+        this.mobileView = window.innerWidth <= 990;
+        window.addEventListener('resize', this.handleView);
+      }
+    },
+    created() {
+      this.handleView();
+    }
+  };
 </script>
 
 <style lang="scss" scoped>
+  @import '../Scss/config';
   .nav-container {
     .links {
       height: 10vh;
       display: flex;
       flex-direction: column;
+      // this is for placing line under nav
       justify-content: flex-end;
       align-items: center;
       z-index: 2;
@@ -55,6 +87,13 @@
       img {
         height: 50px;
         width: 200px;
+      }
+      @include mediaMd {
+        margin: 2rem 0.2rem;
+        img {
+          height: 40px;
+          width: 150px;
+        }
       }
     }
   }
