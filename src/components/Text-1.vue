@@ -12,7 +12,13 @@
 </template>
 
 <script>
-  export default {}
+  export default {
+    data() {
+      return {
+        mobileView: false
+      };
+    }
+  };
 </script>
 
 <style scoped lang="scss">

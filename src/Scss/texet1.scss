@@ -27,3 +27,19 @@ p {
   font-size: 1rem;
   color: #888;
 }
+
+@media screen and (max-width: 990px) {
+  h1 {
+    font-size: 2rem;
+    width: 90%;
+  }
+  h2 {
+    width: 90%;
+    height: 5vh;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  p {
+    width: 90%;
+  }
+}

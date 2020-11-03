@@ -1,25 +1,20 @@
 <template>
-  <div
-    class="nav-container animate__animated animate__zoomIn"
-  >
+  <div class="nav-container animate__animated animate__zoomIn">
     <a href="/home"
       ><div class="logo">
-        <img
-          src="../../public/Favicon/logo.png"
-          alt=""
-        /></div
+        <img src="../../public/Favicon/logo.png" alt="" /></div
     ></a>
     <div class="links">
       <div id="nav" v-if="!mobileView">
         <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
-        <router-link to="/contacts">Contacts</router-link>
+        <router-link target="_blank" to="/portfolio"
+          >Visit My Website</router-link
+        >
+        <router-link target="_blank" to="/about">About</router-link>
+        <router-link target="_blank" to="/contacts">Contacts</router-link>
       </div>
     </div>
-    <Hamburger
-      v-if="mobileView"
-      v-on:btnClicked="showMobileMenu()"
-    />
+    <Hamburger v-if="mobileView" v-on:btnClicked="showMobileMenu()" />
   </div>
 </template>
 
@@ -109,5 +104,10 @@
 
   #nav a.router-link-exact-active {
     font-weight: bold;
+  }
+  @media screen and (max-width: 990px) {
+    .links {
+      min-height: 90px;
+    }
   }
 </style>

@@ -27,10 +27,10 @@
 </template>
 
 <script>
-  import FolowLayout from '../footer/FolowLayout'
-  import Branding from '../footer/Branding'
-  import Contact from '../footer/Contact'
-  import UsfuleLinks from '../footer/UsfuleLinks'
+  import FolowLayout from '../footer/FolowLayout';
+  import Branding from '../footer/Branding';
+  import Contact from '../footer/Contact';
+  import UsfuleLinks from '../footer/UsfuleLinks';
 
   export default {
     components: {
@@ -39,7 +39,7 @@
       FolowLayout,
       Branding
     }
-  }
+  };
 </script>
 
 <style scoped lang="scss">
@@ -141,6 +141,41 @@
       width: 80%;
       display: flex;
       justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    .main-container {
+      .layout {
+        .newsletter {
+          flex-direction: column;
+          .text {
+            h1 {
+              height: 2vh;
+              font-size: 2rem;
+              padding-bottom: 1rem;
+            }
+            h2 {
+              height: 2vh;
+              font-size: 1rem;
+              padding-bottom: 0rem;
+            }
+          }
+          form {
+            input {
+              width: 50vw;
+              font: 1em sans-serif;
+            }
+          }
+        }
+      }
+      .links {
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0rem;
+        overflow: hidden;
+      }
     }
   }
 </style>

@@ -64,12 +64,12 @@
 </template>
 
 <script>
-  import GreenSpreator from '../GreenSpreator'
+  import GreenSpreator from '../GreenSpreator';
   export default {
     components: {
       GreenSpreator
     }
-  }
+  };
 </script>
 
 <style scoped lang="scss">
@@ -104,6 +104,26 @@
           }
         }
         margin: 5px;
+      }
+    }
+    @media screen and (max-width: 990px) {
+      width: 50%;
+      font-size: 0.8rem;
+      span {
+        font-size: 0.8rem;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        font-size: 0.7rem;
+        margin: 0;
+        padding: 0 auto;
+        li {
+          i {
+            font-size: 0.8rem;
+          }
+        }
       }
     }
   }

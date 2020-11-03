@@ -17,7 +17,7 @@
 </template>
 
 <script>
-  import GreenSpreator from './GreenSpreator'
+  import GreenSpreator from './GreenSpreator';
   export default {
     components: {
       GreenSpreator
@@ -25,15 +25,15 @@
     props: ['card'],
     computed: {
       getImgUrl() {
-        return require(`../assets/${this.card.img}`)
+        return require(`../assets/${this.card.img}`);
       }
     },
     methods: {},
 
     data() {
-      return {}
+      return {};
     }
-  }
+  };
 </script>
 
 <style lang="scss" scoped>
@@ -46,6 +46,20 @@
       @include paragraph;
       width: 80%;
       margin: 1rem auto;
+    }
+    @media screen and (max-width: 990px) {
+      width: 40%;
+      margin: auto;
+      p {
+        font-size: 0.8rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+      img {
+        height: 100px;
+        width: 100px;
+      }
     }
   }
 </style>

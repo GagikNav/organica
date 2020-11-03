@@ -31,12 +31,12 @@
 </template>
 
 <script>
-  import GreenSpreator from '../GreenSpreator'
+  import GreenSpreator from '../GreenSpreator';
   export default {
     components: {
       GreenSpreator
     }
-  }
+  };
 </script>
 
 <style scoped lang="scss">
@@ -71,6 +71,9 @@
         }
         margin: 5px;
       }
+    }
+    @media screen and (max-width: 990px) {
+      display: none;
     }
   }
 </style>

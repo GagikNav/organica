@@ -23,7 +23,7 @@
   // import GreenSpreator from '../GreenSpreator'
   export default {
     components: {}
-  }
+  };
 </script>
 
 <style scoped lang="scss">
@@ -63,6 +63,18 @@
       background-size: 90%;
 
       background-image: url('../../assets/png5_a17429d5-8fed-4566-ac17-09f4e684ffe6.png');
+    }
+  }
+  @media screen and (max-width: 990px) {
+    .branding {
+      padding-bottom: 1rem;
+      margin: 2rem auto;
+
+      width: 100%;
+      .about-content {
+        font-size: 0.8rem;
+        padding-bottom: 20px;
+      }
     }
   }
 </style>

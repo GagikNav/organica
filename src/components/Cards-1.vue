@@ -9,7 +9,7 @@
 </template>
 
 <script>
-  import Card from '../components/Card-1'
+  import Card from '../components/Card-1';
   export default {
     components: {
       Card
@@ -42,9 +42,9 @@
             img: `card4.png`
           }
         ]
-      }
+      };
     }
-  }
+  };
 </script>
 <style lang="scss" scoped>
   @import '../Scss/config';
@@ -52,7 +52,15 @@
     width: 80%;
     // background: #ccc;
     display: flex;
+    justify-content: center;
     margin: 5rem auto;
     gap: 15px;
+  }
+
+  @media screen and (max-width: 990px) {
+    .main-contaner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 </style>

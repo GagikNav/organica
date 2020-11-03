@@ -2,7 +2,7 @@
   "vueIndentScriptAndStyle": true,
   "bracketSpacing": true,
   "embeddedLanguageFormatting": "auto",
-  "printWidth": 60,
+  "printWidth": 80,
   "singleQuote": true,
   "semi": true,
   "tabWidth": 2
