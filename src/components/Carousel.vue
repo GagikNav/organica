@@ -1,5 +1,7 @@
 <template>
   <vueper-slides
+    autoplay
+    duration="8000"
     :bullets="false"
     :slide-ratio="1 / 2.35"
     class="no-shadow"
@@ -17,15 +19,14 @@
 </template>
 
 <script>
-  import { VueperSlides, VueperSlide } from 'vueperslides'
-  import '../Scss/carousel.css'
+  import { VueperSlides, VueperSlide } from 'vueperslides';
+  import '../Scss/carousel.css';
   export default {
     components: {
       VueperSlides,
       VueperSlide
     },
     data: () => ({
-      autoPlaying: true,
       internalAutoPlaying: true,
       slides: [
         {
@@ -37,7 +38,7 @@
         // Other slides...
       ]
     })
-  }
+  };
 </script>
 
 <style lang="scss">
@@ -53,8 +54,10 @@
 
   // Responsive section
   @include mediaMd {
+    .vueperslide {
+    }
     .vueperslides__arrows {
-      font-size: 0.5rem;
+      font-size: 0.3rem;
     }
   }
 </style>
