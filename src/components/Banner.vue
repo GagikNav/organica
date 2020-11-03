@@ -8,9 +8,9 @@
         <h1 class="fancy">Why us?</h1>
         <h2 class="title">What is Organica?</h2>
         <p>
-          Die nachstehende Love zeigt die health, die Banken
-          bei food Kernkapitals in Love, Healthy food nach
-          einschlägigen Foodlovers aus-zubuchen wäre.
+          Die nachstehende Love zeigt die health, die Banken bei food
+          Kernkapitals in Love, Healthy food nach einschlägigen Foodlovers
+          aus-zubuchen wäre.
         </p>
       </div>
       <div class="service-container">
@@ -24,8 +24,7 @@
           <img src="../assets/n2.png" alt="" />
           <h4>100% Organic</h4>
           <p>
-            Lorem, ipsum dolor sit amet consectetur
-            adipisicing.
+            Lorem, ipsum dolor sit amet consectetur adipisicing.
           </p>
         </div>
 
@@ -148,11 +147,34 @@
       height: auto;
       .presentaion {
         .main-text-container {
-          padding: 2px;
+          h1 {
+            font-size: 1rem;
+          }
+          h2 {
+            font-size: 1.5rem;
+          }
+          p {
+            font-size: 0.8rem;
+          }
+          padding: 0px;
         }
         .service-container {
-          padding: 2px;
-          height: auto;
+          padding: 2rem 0 2rem 0;
+          .service {
+            img {
+              height: 50px;
+              width: 70px;
+              margin: 20px 10px;
+            }
+
+            h4 {
+              font-size: 1rem;
+            }
+            p {
+              font-size: 0.8rem;
+            }
+            height: auto;
+          }
         }
       }
     }
