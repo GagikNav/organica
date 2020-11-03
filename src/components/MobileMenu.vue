@@ -1,13 +1,13 @@
 <template>
-  <div
-    class="menu-container  "
-    :class="{ show: isMenuOpen }"
-  >
+  <div class="menu-container  " :class="{ show: isMenuOpen }">
     <div class="links">
       <div id="nav">
         <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
-        <router-link to="/contacts">Contacts</router-link>
+        <router-link target="_blank" to="/portfolio"
+          >Visit My Website</router-link
+        >
+        <router-link target="_blank" to="/about">About</router-link>
+        <router-link target="_blank" to="/contacts">Contacts</router-link>
       </div>
     </div>
   </div>

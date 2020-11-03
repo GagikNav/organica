@@ -1,9 +1,10 @@
 <template>
   <div class="nav-container animate__animated animate__zoomIn">
-    <a href="/home"
+    <router-link to="/"
       ><div class="logo">
         <img src="../../public/Favicon/logo.png" alt="" /></div
-    ></a>
+    ></router-link>
+
     <div class="links">
       <div id="nav" v-if="!mobileView">
         <router-link to="/">Home</router-link>
